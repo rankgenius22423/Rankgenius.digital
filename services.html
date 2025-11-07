@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Rankgenius.digital</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!-- ======= NAVIGATION BAR ======= -->
+<header class="nav-bar">
+  <a href="index.html" class="logo">
+    <img src="assets/logo.png" alt="RankGenius Digital Logo">
+  </a>
+
+  <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+       <!-- Dropdown for Industry -->
+       <li class="dropdown">
+        <a href="we-serve.html" class="active">Industry ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="we-serve.html">We Serve</a></li>
+          <li><a href="packages.html">Packages</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="consultation.html" class="btn btn-accent">Get Free Consultation</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+ <!-- SERVICES HERO SECTION -->
+<section class="services-hero">
+  <h1>🚀 All-in-One Digital Marketing & Development Solutions That Drive Real Growth</h1>
+  <p>From SEO to AI-powered analytics, RankGeniusDigital helps businesses and educational institutions scale with smart strategies and measurable results.</p>
+</section>
+
+<style>
+  /* --- Services Page Hero Section --- */
+  .services-hero {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+      url("assets/service.png") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 140px 20px;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .services-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+
+  .services-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    max-width: 950px;
+  }
+
+  .services-hero p {
+    font-size: 1.1rem;
+    color: #cfd2ff;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .services-hero {
+      padding: 120px 20px;
+      min-height: 65vh;
+    }
+    .services-hero h1 {
+      font-size: 2.3rem;
+    }
+    .services-hero p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .services-hero {
+      padding: 100px 15px;
+      min-height: 60vh;
+    }
+    .services-hero h1 {
+      font-size: 1.9rem;
+    }
+    .services-hero p {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+
+  <!-- SERVICES SECTION -->
+  <section class="services">
+  <div class="container">
+    <h1>How can we help you?</h1>
+    <p class="section-subtitle">💼 Our Digital Marketing Services</p>
+    <p class="section-note">(12 Modern, High-Demand Marketing Solutions)</p>
+  
+
+    <div class="service-grid">
+      <!-- 1 -->
+      <div class="service-card">
+        <h3>Search Engine Optimization (SEO)</h3>
+        <p>Boost your visibility and attract organic leads through targeted SEO strategies.</p>
+        <ul>
+          <li>Higher Google Rankings</li>
+          <li>Keyword Optimization</li>
+          <li>Technical SEO & Site Health</li>
+          <li>Local + Global Reach</li>
+        </ul>
+      </div>
+
+      <!-- 2 -->
+      <div class="service-card">
+        <h3>Google Ads (PPC)</h3>
+        <p>Generate instant leads and traffic with smart pay-per-click campaigns.</p>
+        <ul>
+          <li>ROI-Driven Ad Spend</li>
+          <li>High Intent Targeting</li>
+          <li>Conversion Tracking</li>
+          <li>Data-Driven Optimization</li>
+        </ul>
+      </div>
+
+      <!-- 3 -->
+      <div class="service-card">
+        <h3>Meta Ads (Facebook & Instagram)</h3>
+        <p>Engage audiences where they spend most of their time — Meta platforms.</p>
+        <ul>
+          <li>Brand Awareness Campaigns</li>
+          <li>Retargeting for Conversions</li>
+          <li>Sales Funnel Strategy</li>
+          <li>A/B Ad Testing</li>
+        </ul>
+      </div>
+
+      <!-- 4 -->
+      <div class="service-card">
+        <h3>LinkedIn Ads</h3>
+        <p>Reach professionals and decision-makers through B2B-targeted advertising.</p>
+        <ul>
+          <li>Corporate Audience Targeting</li>
+          <li>Employer Branding</li>
+          <li>Thought Leadership Campaigns</li>
+          <li>Lead Form Ads</li>
+        </ul>
+      </div>
+
+      <!-- 5 -->
+      <div class="service-card">
+        <h3>Social Media Marketing</h3>
+        <p>Build communities and boost engagement through strategic content and storytelling.</p>
+        <ul>
+          <li>Content Calendar Planning</li>
+          <li>Influencer Collaboration</li>
+          <li>Platform-Specific Growth</li>
+          <li>Trend Optimization</li>
+        </ul>
+      </div>
+
+      <!-- 6 -->
+      <div class="service-card">
+        <h3>WhatsApp Marketing</h3>
+        <p>Deliver personalized messages and build direct communication with prospects.</p>
+        <ul>
+          <li>Automated Broadcasts</li>
+          <li>Personalized Campaigns</li>
+          <li>High Open Rates</li>
+          <li>Instant Response Tracking</li>
+        </ul>
+      </div>
+
+      <!-- 7 -->
+      <div class="service-card">
+        <h3>Email Marketing</h3>
+        <p>Nurture relationships and re-engage customers with effective email automation.</p>
+        <ul>
+          <li>Drip Campaigns</li>
+          <li>Segmentation & Personalization</li>
+          <li>High Open + Click Rates</li>
+          <li>Conversion Analytics</li>
+        </ul>
+      </div>
+
+      <!-- 8 -->
+      <div class="service-card">
+        <h3>Content Marketing</h3>
+        <p>Tell stories that rank, connect, and convert.</p>
+        <ul>
+          <li>SEO-Optimized Blogs</li>
+          <li>Ebooks, Case Studies & Whitepapers</li>
+          <li>Brand Storytelling</li>
+          <li>Copy That Sells</li>
+        </ul>
+      </div>
+
+      <!-- 9 -->
+      <div class="service-card">
+        <h3>Performance Marketing</h3>
+        <p>Maximize ROI across digital channels with measurable ad strategies.</p>
+        <ul>
+          <li>Cross-Channel Optimization</li>
+          <li>Conversion Focused</li>
+          <li>Media Planning</li>
+          <li>ROI Reporting</li>
+        </ul>
+      </div>
+
+      <!-- 10 -->
+      <div class="service-card">
+        <h3>Analytics & Reporting</h3>
+        <p>Turn marketing data into actionable insights.</p>
+        <ul>
+          <li>Campaign Dashboard Setup</li>
+          <li>KPI Tracking</li>
+          <li>Data Visualization Reports</li>
+          <li>ROI Analysis</li>
+        </ul>
+      </div>
+
+      <!-- 11 -->
+      <div class="service-card">
+        <h3>Branding Strategy</h3>
+        <p>Create a unified identity that your audience trusts and remembers.</p>
+        <ul>
+          <li>Brand Voice & Audit</li>
+          <li>Logo & Visual Identity</li>
+          <li>Campaign Consistency</li>
+          <li>Brand Communication</li>
+        </ul>
+      </div>
+
+      <!-- 12 -->
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>Design that attracts, engages, and converts.</p>
+        <ul>
+          <li>Ad Creatives & Banners</li>
+          <li>Social Media Graphics</li>
+          <li>Print + Digital Collateral</li>
+          <li>Motion Graphics (Optional)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPMENT & TECH -->
+<section class="tech-section">
+  <div class="container">
+    <h2>🧩 Website Development & Technology Services</h2>
+    <p>(For businesses that want performance-driven digital infrastructure)</p>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>Website Design & Development</h3>
+        <p>Designs that look great and convert even better.</p>
+        <ul>
+          <li>Responsive, Mobile-Optimized Websites</li>
+          <li>Landing Pages for Campaigns</li>
+          <li>WordPress & Custom Builds</li>
+          <li>Maintenance & Hosting</li>
+        </ul>
+      </div>
+
+      <div class="tech-card">
+        <h3>Landing Page Development</h3>
+        <p>Convert more traffic into leads with conversion-optimized landing pages.</p>
+        <ul>
+          <li>CRO Best Practices</li>
+          <li>Fast Load Speed</li>
+          <li>A/B Testing</li>
+          <li>Pixel & Analytics Integration</li>
+        </ul>
+      </div>
+
+      <div class="tech-card">
+        <h3>E-Commerce Development</h3>
+        <p>Power your store with smart design and seamless checkout experiences.</p>
+        <ul>
+          <li>WooCommerce / Shopify Setup</li>
+          <li>Product Optimization</li>
+          <li>Payment Gateway Integration</li>
+          <li>Abandoned Cart Recovery</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI SECTION -->
+<section class="ai-section">
+  <div class="container">
+    <h2>🤖 AI-Powered Marketing Solutions</h2>
+    <p>(Where creativity meets data-driven intelligence)</p>
+    <br>
+    <div class="ai-grid">
+      <div class="ai-item">
+        <h3>AI Campaign Optimization</h3>
+        <p>Our AI tools analyze thousands of data points to refine targeting, improve performance, and lower costs.</p>
+      </div>
+      <div class="ai-item">
+        <h3>Predictive Lead Scoring</h3>
+        <p>We identify your highest-potential customers using machine learning — so you can focus your budget smartly.</p>
+      </div>
+      <div class="ai-item">
+        <h3>Chatbots & Automation</h3>
+        <p>Automate customer communication with AI chatbots integrated into your website or WhatsApp.</p>
+      </div>
+      <div class="ai-item">
+        <h3>Marketing Analytics Dashboard</h3>
+        <p>Get real-time insights on traffic, leads, and ROI — visualized beautifully.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-choose">
+  <div class="container">
+    <h2>🧠 Why Choose RankGeniusDigital</h2>
+
+    <div class="why-grid">
+      <div class="why-box">
+        <p>✅ AI-Driven Marketing Expertise – Smarter decisions, better results.</p>
+      </div>
+      <div class="why-box">
+        <p>✅ Proven Campaign Results – 200+ clients, measurable ROI.</p>
+      </div>
+      <div class="why-box">
+        <p>✅ Dedicated Support Team – One point of contact, full transparency.</p>
+      </div>
+      <div class="why-box">
+        <p>✅ Customized Strategies – Every business gets a unique growth plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section background and layout */
+.why-choose {
+  background-color: #0b0d17;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Heading style */
+.why-choose h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* Grid layout for boxes */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual box styling */
+.why-box {
+  background: #111827;
+  border-radius: 12px;
+  padding: 25px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+  border: 1px solid transparent;
+}
+
+/* Hover effect — subtle glowing border */
+.why-box:hover {
+  border: 1px solid #2563eb; /* blue border */
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+  transform: translateY(-5px);
+}
+
+/* Text styling inside box */
+.why-box p {
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+</style>
+
+
+<!-- CTA SECTION -->
+<section class="project-cta">
+  <div class="container">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Would you like to start a project with us?</h2>
+      </div>
+      <a href="consultation.html" class="btn btn-accent">GET A QUOTE</a>
+    </div>
+  </div>
+</section>
+
+ <!-- FOOTER -->
+ <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+        <li><a href="industry.html" class="active">Industry</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <p>Udaipur, Rajasthan, India</p>
+        <p>For enquiry and career</p>
+        <a href="mailto:rankgenius.digital@gmail.com" class="email">rankgenius.digital@gmail.com</a>
+        <div class="footer-social">
+          <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2025 RankGenius.Digital. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

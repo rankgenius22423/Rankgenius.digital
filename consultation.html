@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Get Free Consultation | RankGenius</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="consult-body">
+
+  <div class="consult-form-container" role="main">
+    <h1 id="consultTitle">Get Your Free Consultation</h1>
+    <p>Fill out the form below and our team will get in touch with you shortly.</p>
+
+    <form id="consultForm" class="consult-form" autocomplete="on">
+      <input type="text" name="name" id="name" placeholder="Full Name" required />
+      <input type="tel" name="number" id="number" placeholder="Phone Number" required />
+      <input type="email" name="email" id="email" placeholder="Email Address" required />
+      <input type="url" name="url" id="url" placeholder="Website URL" />
+      <select name="industry" id="industry" required>
+        <option value="">Select Industry</option>
+        <option value="education">Education & eLearning</option>
+        <option value="ecommerce">E-commerce</option>
+        <option value="healthcare">Healthcare</option>
+        <option value="realestate">Real Estate</option>
+        <option value="it">IT & Software</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="enquire" style="text-align:left; width:100%; color:#9699ab;">You Enquire</label>
+      <textarea id="enquire" name="enquire" placeholder="Tell us about your inquiry" rows="4" style="resize:vertical;"></textarea>
+
+      <button type="submit" class="btn-submit">Submit Request</button>
+    </form>
+
+    <p id="thankyou" style="display:none; margin-top:1rem; color:#dff0d8; font-weight:700;"></p>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+
+</body>
+</html>

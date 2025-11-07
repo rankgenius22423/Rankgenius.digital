@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rankgenius.digital</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- SwiperJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="RankGenius Digital Logo">
+      </a>
+      <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+           <!-- Dropdown for Industry -->
+      <li class="dropdown">
+        <a href="we-serve.html" class="active">Industry ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="we-serve.html">We Serve</a></li>
+          <li><a href="packages.html">Packages</a></li>
+        </ul>
+      </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <a href="consultation.html" class="btn btn-accent">Get Free Consultation</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1>Smart Digital Marketing for a Smarter Era</h1>
+      <h6>Your Growth, Our Genius</h6>
+      <p class="subtitle">We help businesses, institutes, and brands grow faster with AI-driven marketing strategies, powerful web experiences, and measurable results.</p>
+       <!-- New Analyzer Box -->
+       <div class="audit-box">
+        <form action="consultation.html" method="get" class="analyzer-form">
+          <input type="url" placeholder="http://yoursite.com" required>
+          <button type="submit">ANALYZE YOUR SITE</button>
+        </form>
+        
+      </div>
+      <div class="badges">
+        <span>✓ Google Partner</span>
+        <span>✓ Meta Business Partner</span>
+        <span>✓ 10+ Years of Experience</span>
+        <span>✓ 200+ Happy Clients</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+<section class="about-section">
+  <div class="container">
+    <h2>At <span>RankGeniusDigital</span>, we’re not just marketers — we’re your growth partners.</h2>
+    <p>We blend creativity with data to help your business attract, engage, and convert audiences across digital platforms.</p>
+    <p>Whether you’re a startup, a school, or an established enterprise, we craft marketing strategies that deliver real results — not vanity metrics.</p>
+
+    <div class="about-highlights">
+      <div class="highlight-box">🚀 <strong>Data-driven Campaigns</strong></div>
+      <div class="highlight-box">💡 <strong>AI-Powered Optimization</strong></div>
+      <div class="highlight-box">🌎 <strong>Global Reach</strong></div>
+      <div class="highlight-box">🎯 <strong>ROI-Focused Approach</strong></div>
+    </div>
+    <br>
+    <a href="https://calendly.com/rankgeniusdigital/free-strategy-call" 
+   target="_blank" 
+   rel="noopener noreferrer" class="btn btn-accent">Book a Meeting</a>
+  </div>
+</section>
+
+  <section class="who-we-help">
+    <div class="container help-box">
+      <div class="help-header">
+        <h2 class="help-title">Who We Help</h2>
+        <h3 class="help-subtitle">Industries We Empower</h3>
+        <p class="intro-text">
+          Our tailored strategies deliver measurable impact across diverse industries — 
+          helping every brand grow smarter and faster.
+        </p>
+      </div>
+      <br>
+  
+      <div class="industries-list">
+        <p>🎓 <strong>Education & EdTech:</strong> Schools, colleges, and EdTech platforms aiming to boost admissions and engagement.</p>
+        <p>🏥 <strong>Healthcare & Clinics:</strong> Hospitals and clinics focused on growing patient reach and online trust.</p>
+        <p>🏠 <strong>Real Estate & Builders:</strong> Developers and agents looking to generate qualified property leads.</p>
+        <p>🛍️ <strong>Retail & E-Commerce:</strong> Brands seeking to drive traffic, conversions, and repeat customers.</p>
+        <p>💼 <strong>Corporate & Startups:</strong> Businesses building authority and scaling through smart digital strategies.</p>
+        <p>🍽️ <strong>Hospitality & Restaurants:</strong> Restaurants and hotels enhancing visibility and bookings through local marketing.</p>
+        <p>🚗 <strong>Automobile & Manufacturing:</strong> Automotive brands accelerating sales with performance-driven campaigns.</p>
+        <p>💻 <strong>Technology & SaaS:</strong> Tech companies and SaaS products scaling faster with data-driven growth solutions.</p>
+        <p>🌞<strong>Solar & Renewable Energy:</strong> Green energy companies generating awareness, leads, and partnerships through targeted digital campaigns.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- SERVICES -->
+<section class="services">
+  <div class="container">
+    <h2>End-to-End Digital Marketing Solutions</h2>
+    <p class="subtitle">Everything your business needs to grow — all under one roof.</p>
+
+    <div class="service-grid">
+      <div class="service">🌐 <strong>Search Engine Optimization (SEO)</strong><br>Improve your visibility and rank higher on Google.</div>
+      <div class="service">💰 <strong>Paid Ads (Google & Meta)</strong><br>Generate high-quality leads and sales.</div>
+      <div class="service">📱 <strong>Social Media Marketing</strong><br>Build awareness and engagement with storytelling.</div>
+      <div class="service">💻 <strong>Website Design & Development</strong><br>Designs that drive conversions.</div>
+      <div class="service">🎨 <strong>Brand Strategy & Creative Design</strong><br>Define your voice, visuals, and message.</div>
+      <div class="service">🤖 <strong>AI-Powered Marketing Analytics</strong><br>Optimize campaigns using automation and data.</div>
+    </div>
+  </div>
+</section>
+
+  <!-- WHY CHOOSE US (SLIDER) -->
+  <section class="why-choose">
+    <div class="container">
+      <h2>Why Choose RankGeniusDigital</h2>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="choose-content">
+              <div class="choose-img">
+                <img src="https://zerogravitymarketing.com/wp-content/uploads/2023/05/00_HERO-1-764x500.jpg" alt="AI Marketing">
+              </div>
+              <div class="choose-text">
+                <span class="tag">AI-Driven Marketing</span>
+                <h3>Smarter Insights for Better ROI</h3>
+                <p>We use AI-powered models to continuously optimize campaigns and deliver measurable, data-backed growth.</p>
+                <div class="feature-cards">
+                  <div class="feature"><h4>🤖 Predictive Targeting</h4><p>Identify high-value users before competitors.</p></div>
+                  <div class="feature"><h4>📈 Real-Time Optimization</h4><p>AI learns what works — and scales it fast.</p></div>
+                </div>
+                <a href="services.html" class="btn btn-accent explore-btn">Explore More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="choose-content">
+              <div class="choose-img">
+                <img src="https://zerogravitymarketing.com/wp-content/uploads/2025/02/ZGM-Solutions-page-1.webp" alt="Proven Results">
+              </div>
+              <div class="choose-text">
+                <span class="tag">Proven Results</span>
+                <h3>200+ Successful Campaigns Across Industries</h3>
+                <p>From hospitality to fintech — we’ve driven performance at scale with clear KPIs and long-term impact.</p>
+                <div class="feature-cards">
+                  <div class="feature"><h4>🏆 Multi-Sector Expertise</h4><p>Adapted strategies that win in any field.</p></div>
+                  <div class="feature"><h4>📊 Data-Led Decisions</h4><p>No guesswork — just results.</p></div>
+                </div>
+                <a href="services.html" class="btn btn-accent explore-btn">Explore More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="choose-content">
+              <div class="choose-img">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Transparency">
+              </div>
+              <div class="choose-text">
+                <span class="tag">Transparency</span>
+                <h3>No Hidden Costs, Only Measurable Outcomes</h3>
+                <p>Our billing is simple and our reporting is clear — you always know where every rupee goes.</p>
+                <div class="feature-cards">
+                  <div class="feature"><h4>🧾 Clear Billing</h4><p>No surprise invoices.</p></div>
+                  <div class="feature"><h4>🔍 Open Reports</h4><p>View live dashboards anytime.</p></div>
+                </div>
+                <a href="services.html" class="btn btn-accent explore-btn">Explore More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="choose-content">
+              <div class="choose-img">
+                <img src="https://www.lucidadvertising.com/wp-content/uploads/2023/11/AdobeStock_246418698-2048x1365.jpeg" alt="Custom Strategies">
+              </div>
+              <div class="choose-text">
+                <span class="tag">Custom Strategies</span>
+                <h3>Every Brand Is Unique, So Is Our Approach</h3>
+                <p>We create marketing ecosystems that reflect your brand’s goals, audience, and scale potential.</p>
+                <div class="feature-cards">
+                  <div class="feature"><h4>🎯 Audience-First Creative</h4><p>Campaigns that connect & convert.</p></div>
+                  <div class="feature"><h4>🚀 Scalable Systems</h4><p>Automated, repeatable growth.</p></div>
+                </div>
+                <a href="services.html" class="btn btn-accent explore-btn">Explore More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 (Innovation) -->
+          <div class="swiper-slide">
+            <div class="choose-content">
+              <div class="choose-img">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Innovation">
+              </div>
+              <div class="choose-text">
+                <span class="tag">Innovation</span>
+                <h3>Stay Ahead with Next-Gen Digital Tools</h3>
+                <p>We blend AI analytics, automation, and human creativity to future-proof your marketing strategy.</p>
+                <div class="feature-cards">
+                  <div class="feature"><h4>⚙️ Automation</h4><p>Smart systems that work 24/7.</p></div>
+                  <div class="feature"><h4>💡 Creative Intelligence</h4><p>AI + Design that sells your story.</p></div>
+                </div>
+                <a href="services.html" class="btn btn-accent explore-btn">Explore More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <div class="choose-content">
+              <div class="choose-img">
+                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1200&auto=format&fit=crop" alt="Partner With Us">
+              </div>
+              <div class="choose-text">
+                <span class="tag">Partner With Us</span>
+                <h3>Ready to Start Your Growth Journey?</h3>
+                <p>Join 200+ brands who scaled with RankGeniusDigital. Let’s design your next big success story together.</p>
+                <a href="consultation.html" class="btn btn-accent">Start a Project</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results container">
+    <h2>Client Results / Case Studies</h2>
+    <h3>Real Results. Real Growth.</h3>
+   <!-- STATS SECTION -->
+ <div class="stats-section">
+  <div class="container">
+    <h3 class="stats-title">Serve Clients</h3>
+    <div class="stats-grid">
+      <div class="stat-box">
+        <h2 class="counter" data-target="150" data-suffix="+">0</h2>
+        <p>Satisfied Clients</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter" data-target="200" data-suffix="+">0</h2>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter" data-target="50" data-suffix="+">0</h2>
+        <p>Accolades Earned</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter" data-target="56000" data-suffix="K+">0</h2>
+        <p>Lines of Code</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- TESTIMONIALS (SLIDER) -->
+<section class="testimonials container">
+  <h2>What Our Clients Say</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <blockquote>“RankGeniusDigital transformed our online presence. We saw real growth within the first 60 days.”<br>
+          <strong>Rohit Sharma</strong><br><span>EduGrow Institute</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“Their SEO and ad strategies are top-notch — highly recommended!”<br>
+          <strong>Priya Nair</strong><br><span>Ecom Founder</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“Our admissions increased by 3x after working with RankGeniusDigital. Their education marketing expertise is unmatched.”<br>
+          <strong>Dr. Meena Patel</strong><br><span>BrightFuture Academy</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“They redesigned our entire website and handled ads — the results were phenomenal. Excellent communication and creative ideas.”<br>
+          <strong>Amit Khanna</strong><br><span>TechNova Solutions</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“We partnered with RankGeniusDigital for our healthcare campaigns. Patient inquiries went up by 150% in just two months.”<br>
+          <strong>Dr. Arjun Bansal</strong><br><span>CityCare Clinics</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“The team understood our real estate audience perfectly. We received genuine property leads within days.”<br>
+          <strong>Naveen Tiwari</strong><br><span>EliteSpaces Realty</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“Our brand visibility across social platforms skyrocketed. RankGeniusDigital’s team knows what works.”<br>
+          <strong>Sneha Deshmukh</strong><br><span>UrbanGlam Boutique</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“Highly professional and data-driven. Their AI insights helped us cut costs and improve lead quality.”<br>
+          <strong>Vikas Rao</strong><br><span>NextEdge Startups</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“Outstanding team! They managed our Google Ads and email automation with great precision. Real ROI, not just reports.”<br>
+          <strong>Sarah Williams</strong><br><span>GrowthBridge Marketing (New York, USA)</span>
+        </blockquote>
+      </div>
+
+      <div class="swiper-slide">
+        <blockquote>“RankGeniusDigital helped us scale our SaaS product globally. The combination of creative and data-driven work is impressive.”<br>
+          <strong>James Carter</strong><br><span>CloudFlow Technologies (London, UK)</span>
+        </blockquote>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+ <!-- CTA SECTION -->
+<section class="project-cta">
+  <div class="container">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Would you like to start a project with us?</h2>
+      </div>
+      <a href="consultation.html" class="btn btn-accent">GET A QUOTE</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+        <li><a href="industry.html" class="active">Industry</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <p>Udaipur, Rajasthan, India</p>
+        <p>For enquiry and career</p>
+        <a href="mailto:rankgenius.digital@gmail.com" class="email">rankgenius.digital@gmail.com</a>
+        <div class="footer-social">
+          <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2025 RankGenius.Digital. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+
+   <!-- Swiper Initialization 
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      loop: true,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: ".swiper-pagination", clickable: true },
+    });
+  </script>  -->
+   
+  
+</body>
+</html>
