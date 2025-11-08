@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Rankgenius.digital</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <!-- ======= NAVIGATION BAR ======= -->
+<header class="nav-bar">
+  <a href="index.html" class="logo">
+    <img src="assets/logo.png" alt="RankGenius Digital Logo">
+  </a>
+
+  <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="we-serve.html">Industry</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="consultation.html" class="btn btn-accent">Get Free Consultation</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- HERO -->
+<section class="hero about-hero">
+  <div class="overlay"></div>
+  <div class="container hero-content">
+    <h1>Empowering Brands with Digital <br>Intelligence</h1>
+    <p>
+      Founded with a vision to bring measurable growth to every brand, RankGenius blends creativity, analytics, 
+      and automation to build digital experiences that <em>rank, convert, and grow.</em>
+    </p>
+  </div>
+</section>
+
+<style>
+  /* --- About Page Hero Section --- */
+  .about-hero {
+    position: relative;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)),
+      url("assets/about.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 140px 20px;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .about-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 8, 20, 0.4);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    color: #cfd2ff;
+    line-height: 1.7;
+  }
+
+  .hero-content em {
+    color: #9aa3ff;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .about-hero {
+      padding: 120px 20px;
+      min-height: 65vh;
+    }
+
+    .hero-content h1 {
+      font-size: 2.3rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-hero {
+      padding: 100px 15px;
+      min-height: 60vh;
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .hero-content p {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+
+  <!-- WHO WE ARE -->
+ <section class="about-section">
+  <div class="container">
+    <h2>Who We Are at <span>RankGenius</span></h2>
+    <p>We blend <strong>creativity</strong>, <strong>data intelligence</strong>, and <strong>automation</strong> to build digital experiences that rank, convert, and grow your brand.</p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="icon-circle"><img src="assets/icons/team.svg" alt="Who We Are"></div>
+        <h3>Who We Are</h3>
+        <p>At <strong>RankGenius</strong>, we’re not just another digital marketing agency — we’re your <em>growth partners in the digital era.</em></p>
+      </div>
+
+      <div class="about-card">
+        <div class="icon-circle"><img src="assets/icons/mission.svg" alt="Mission"></div>
+        <h3>Our Mission</h3>
+        <p>To empower businesses and institutions with performance-driven digital strategies that attract, engage, and convert audiences.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="icon-circle"><img src="assets/icons/vision.svg" alt="Vision"></div>
+        <h3>Our Vision</h3>
+        <p>To lead globally in AI-powered digital marketing solutions that transform how brands connect and grow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- WHAT WE DO -->
+  <section class="what-we-do">
+    <div class="container">
+      <h2>What We Do</h2>
+      <p>
+        We deliver <strong>360° digital growth solutions</strong> that combine marketing, development, and AI innovation under one roof.
+      </p>
+      <ul class="services-list">
+        <li>✅ <strong>Digital Marketing Services</strong> – SEO, PPC, content, and social media that drive traffic and conversions.</li>
+        <li>✅ <strong>Web & App Development</strong> – High-performing websites and apps built for speed and scalability.</li>
+        <li>✅ <strong>AI-Powered Marketing</strong> – Data analytics, automation, and AI tools for smarter results.</li>
+        <li>✅ <strong>Creative Branding & Design</strong> – Visual storytelling that leaves a lasting impression.</li>
+      </ul>
+      <p>Every strategy is <strong>custom-built for your brand</strong>, ensuring precision, performance, and measurable results.</p>
+    </div>
+  </section>
+
+  <!-- 6-D PROCESS -->
+  <section class="process-section">
+    <div class="container">
+      <h2>Our 6-D Process</h2>
+      <div class="process-grid">
+        <div class="process-step"><span>01.</span><h4>Discover</h4><p>We understand your goals, challenges, and audience.</p></div>
+        <div class="process-step"><span>02.</span><h4>Define</h4><p>We craft a data-driven digital plan and roadmap.</p></div>
+        <div class="process-step"><span>03.</span><h4>Design</h4><p>Our team creates visually stunning brand experiences.</p></div>
+        <div class="process-step"><span>04.</span><h4>Develop</h4><p>We bring ideas to life through technology and innovation.</p></div>
+        <div class="process-step"><span>05.</span><h4>Deploy</h4><p>We launch across platforms for maximum engagement.</p></div>
+        <div class="process-step"><span>06.</span><h4>Deliver</h4><p>We optimize performance and ensure measurable growth.</p></div>
+      </div>
+    </div>
+  </section>
+
+<!-- WHY CHOOSE -->
+<section class="hover-box-section">
+  <div class="hover-container">
+    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1600&auto=format&fit=crop" alt="Team Meeting" class="hover-image">
+
+    <div class="hover-overlay">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li><strong>⭐ Proven Expertise</strong> – 10+ years of combined experience in marketing and development.</li>
+        <li><strong>⭐ Results-Driven</strong> – Every strategy delivers measurable ROI.</li>
+        <li><strong>⭐ Transparency</strong> – Real-time reporting and visibility.</li>
+        <li><strong>⭐ Creative + Analytical Blend</strong> – Balance of design and data intelligence.</li>
+        <li><strong>⭐ Client-First Approach</strong> – We treat your brand like our own.</li>
+      </ul>
+      <p class="cta-text">
+        Join the Digital Revolution with <strong>RankGenius</strong> 🚀  
+        <br>
+        <a href="consultation.html" class="btn btn-accent">Book Your Free Strategy Session</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+ <!-- STATS SECTION -->
+ <section class="stats-section">
+  <div class="container">
+    <h3 class="stats-title">Serve Clients</h3>
+    <div class="stats-grid">
+      <div class="stat-box">
+        <h2 class="counter" data-target="150" data-suffix="+">0</h2>
+        <p>Satisfied Clients</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter" data-target="200" data-suffix="+">0</h2>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter" data-target="50" data-suffix="+">0</h2>
+        <p>Accolades Earned</p>
+      </div>
+      <div class="stat-box">
+        <h2 class="counter" data-target="56000" data-suffix="K+">0</h2>
+        <p>Lines of Code</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- CTA SECTION -->
+<section class="project-cta">
+  <div class="container">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Would you like to start a project with us?</h2>
+      </div>
+      <a href="consultation.html" class="btn btn-accent">GET A QUOTE</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+        <li><a href="industry.html" class="active">Industry</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <p>Udaipur, Rajasthan, India</p>
+        <p>For enquiry and career</p>
+        <a href="mailto:rankgenius.digital@gmail.com" class="email">rankgenius.digital@gmail.com</a>
+        <div class="footer-social">
+          <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2025 RankGenius.Digital. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
