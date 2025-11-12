@@ -159,51 +159,60 @@ document.addEventListener('DOMContentLoaded', () => {
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbygvJQOBLBxSDptQD-4tD-KgsoN52G64N0IwPbo4thCis8UZkf27qsBd7eBCoPBgxbL/exec";
 
 document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('consultForm');
-  if (!form) return;
+  // ============================
+  // Function Definition
+  // ============================
+  function attachFormHandler() {
+    const consultForm = document.getElementById('consultForm');
+    if (!consultForm) return;
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+    consultForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const form = e.target;
 
-    const data = {
-      name: form.name.value.trim(),
-      number: form.number.value.trim(),
-      email: form.email.value.trim(),
-      url: form.url.value.trim(),
-      industry: form.industry.value,
-      enquire: form.enquire.value.trim(),
-      source: window.location.href,
-      timestamp: new Date().toISOString()
-    };
+      const data = {
+        name: form.name.value.trim(),
+        number: form.number.value.trim(),
+        email: form.email.value.trim(),
+        url: form.url.value.trim(),
+        industry: form.industry.value,
+        enquire: form.enquire ? form.enquire.value.trim() : "",
+        source: window.location.href,
+        timestamp: new Date().toISOString()
+      };
 
-    try {
-      const res = await fetch(SCRIPT_URL, {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" },
-        mode: "no-cors" // ✅ Keep this for local/live preview testing
-      });
+      try {
+        const res = await fetch(SCRIPT_URL, {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: { "Content-Type": "application/json" }
+        });
 
-      alert("✅ Thank you! Your form has been submitted.");
-      form.reset();
+        const json = await res.json();
 
-    } catch (err) {
-      console.error(err);
-      alert("⚠️ Error submitting form. Please try again.");
-    }
-  });
-});
+        if (json.result === "success") {
+          alert(`✅ Thank you, ${data.name}! Your request has been received.`);
+          form.reset();
+        } else {
+          alert("❌ Submission failed. Please try again.");
+        }
+      } catch (err) {
+        alert("⚠️ Network error — please check your connection.");
+        console.error(err);
+      }
+    });
+  }
 
-
-  // Attach immediately if form already exists
+  // ============================
+  // Call the function safely
+  // ============================
   attachFormHandler();
 
-  // If “Get Free Consultation” button is clicked and form loads later
   const consultBtn = document.querySelector('.btn.btn-accent');
   if (consultBtn) {
     consultBtn.addEventListener('click', () => {
       setTimeout(() => {
-        attachFormHandler(); // Recheck after form appears
+        attachFormHandler(); // reattach after form appears
       }, 500);
     });
   }
@@ -261,4 +270,5 @@ style.innerHTML = `
   }
 `;
 document.head.appendChild(style);
+
 
